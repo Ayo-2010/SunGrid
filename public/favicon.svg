@@ -1,0 +1,16 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" role="img" aria-label="SunGrid Energy">
+  <rect width="64" height="64" rx="14" fill="#0b3b2c"/>
+  <circle cx="32" cy="27" r="11" fill="#f5c542"/>
+  <g stroke="#f5c542" stroke-width="3" stroke-linecap="round">
+    <path d="M32 6v5"/>
+    <path d="M32 43v5"/>
+    <path d="M11 27h5"/>
+    <path d="M48 27h5"/>
+    <path d="M17.2 12.2l3.5 3.5"/>
+    <path d="M43.3 38.3l3.5 3.5"/>
+    <path d="M46.8 12.2l-3.5 3.5"/>
+    <path d="M20.7 38.3l-3.5 3.5"/>
+  </g>
+  <path d="M12 51h40" stroke="#f7f3e8" stroke-width="3" stroke-linecap="round"/>
+  <path d="M20 51v-6h8v6M36 51v-9h8v9" stroke="#f7f3e8" stroke-width="2.4" stroke-linejoin="round" fill="none"/>
+</svg>
