@@ -1,0 +1,338 @@
+import type { Solution } from '#shared/types'
+
+export const solutions: Solution[] = [
+  {
+    slug: 'residential',
+    title: 'Residential solar systems',
+    navLabel: 'Residential',
+    tagline: 'Backup power for the way your home actually runs.',
+    summary:
+      'A home solar system should protect the appliances you rely on, fit the roof you have, and leave room to grow. We start with your load schedule, not a fixed package.',
+    image: '/images/install-roof.jpg',
+    imageAlt: 'Technician fixing a solar module to a residential roof',
+    icon: 'i-lucide-house',
+    idealFor: [
+      'Homes and apartments with unreliable grid supply',
+      'Households replacing a petrol or diesel generator',
+      'Owners who want essential-load backup without rewiring the whole house',
+      'New builds planning conduit and battery space from the start',
+    ],
+    benefits: [
+      'Keep lights, fans, refrigeration, internet and selected sockets running during outages',
+      'Charge from solar during the day and use stored energy at night',
+      'Scale battery storage later as budget and needs change',
+      'Reduce generator run-hours, noise and fuel handling',
+    ],
+    limitations: [
+      'Whole-home backup, including air conditioning, usually needs a significantly larger inverter and battery bank',
+      'Rooftop space, shading and structural condition can limit array size',
+      'Output depends on weather, panel orientation and maintenance',
+      'A solar system is not a substitute for safe wiring or a compliant distribution board',
+    ],
+    components: [
+      'Hybrid inverter sized to continuous and surge loads',
+      'LiFePO₄ battery bank matched to backup duration',
+      'Monocrystalline or N-type solar modules',
+      'Roof mounting, DC/AC protection, earthing and monitoring',
+    ],
+    designNotes: [
+      'We separate essential circuits from optional loads so the backup system can be realistic and affordable.',
+      'Battery capacity is calculated from measured or declared load, not from the inverter rating.',
+      'Generator integration is designed only where the existing generator is suitable and changeover is safe.',
+    ],
+    relatedProducts: ['home-essentials-3-6kw-kit', 'deye-5kw-hybrid-inverter', 'pylontech-us5000'],
+  },
+  {
+    slug: 'commercial',
+    title: 'Commercial solar systems',
+    navLabel: 'Commercial',
+    tagline: 'Daytime solar and backup for premises that cannot pause.',
+    summary:
+      'Shops, clinics, offices and hospitality businesses have different load patterns from homes. We audit when power is used, then design around the costliest and most critical periods.',
+    image: '/images/commercial-building.jpg',
+    imageAlt: 'Modern commercial office interior with glazed partitions',
+    icon: 'i-lucide-store',
+    idealFor: [
+      'Retail stores, salons, pharmacies and restaurants',
+      'Clinics, diagnostic centres and small hospitals',
+      'Offices, co-working spaces and schools',
+      'Hotels, guest houses and event venues',
+    ],
+    benefits: [
+      'Shift daytime consumption to solar where premises are occupied during peak sun',
+      'Protect critical equipment and cold-chain loads from supply interruptions',
+      'Reduce generator running hours and fuel logistics',
+      'Phase investment across multiple sites or departments',
+    ],
+    limitations: [
+      'Three-phase sites need careful phase balancing and a dedicated backup distribution design',
+      'Cold rooms, lifts and compressors have high starting currents that must be measured',
+      'Grid-tied savings depend on tariff structure, metering and export rules',
+      'Business operations may continue during parts of the installation, but some downtime is normal',
+    ],
+    components: [
+      'Single- or three-phase hybrid inverters',
+      'Commercial-grade battery storage where backup is required',
+      'Rooftop or carport arrays with structural review',
+      'Generator changeover, surge protection and energy monitoring',
+    ],
+    designNotes: [
+      'A load audit is the first deliverable. It records actual demand, operating hours and critical circuits.',
+      'We design for future expansion where switchgear and roof space allow.',
+      'Proposals separate equipment, installation, and any builder’s work so scope is clear.',
+    ],
+    relatedProducts: ['business-backup-10kw-kit', 'growatt-sph-6kw-hybrid', 'felicity-10kwh-lithium'],
+  },
+  {
+    slug: 'industrial',
+    title: 'Industrial solar systems',
+    navLabel: 'Industrial',
+    tagline: 'Engineering-led energy for larger, site-specific loads.',
+    summary:
+      'Industrial power projects need a single-line diagram, load study and often generator integration. We scope these systems individually rather than selling a standard kit.',
+    image: '/images/industrial.jpg',
+    imageAlt: 'Industrial plant machinery operating in a factory',
+    icon: 'i-lucide-factory',
+    idealFor: [
+      'Manufacturing and processing facilities',
+      'Warehouses, cold storage and logistics sites',
+      'Large farms and agro-processing operations',
+      'Property developments and shared facilities',
+    ],
+    benefits: [
+      'Offset high daytime demand with a sized solar array',
+      'Support selected critical processes with storage',
+      'Integrate with existing generators and changeover systems where safe',
+      'Meter and monitor generation by feeder or building',
+    ],
+    limitations: [
+      'Large loads may require medium-voltage interconnection and utility approval',
+      'Power quality, harmonics and protection coordination must be engineered',
+      'Roof or land area may be the binding constraint, not budget',
+      'Industrial projects follow longer design, procurement and commissioning timelines',
+    ],
+    components: [
+      'Three-phase string or commercial inverters',
+      'Containerised or rack-mounted battery storage (where specified)',
+      'Transformer and switchgear coordination where required',
+      'SCADA-ready metering and protection',
+    ],
+    designNotes: [
+      'We start with a site survey, utility records and a measured load profile where available.',
+      'Structural and electrical studies are carried out before any equipment is ordered.',
+      'Final pricing is quotation-only and follows the approved design.',
+    ],
+    relatedProducts: ['business-backup-10kw-kit', 'growatt-sph-6kw-hybrid', 'solis-s5-gr3p5k'],
+  },
+  {
+    slug: 'solar-water-pumping',
+    title: 'Solar water pumping',
+    navLabel: 'Solar water pumping',
+    tagline: 'Water when the sun is up — with storage for later.',
+    summary:
+      'Solar pumping is designed around head, flow and daily water demand. A storage tank usually matters as much as the pump itself.',
+    image: '/images/solar-install.jpg',
+    imageAlt: 'Ground-mounted solar array in an open field',
+    icon: 'i-lucide-droplets',
+    idealFor: [
+      'Farms and irrigation schemes',
+      'Estates and community boreholes',
+      'Schools, clinics and livestock operations',
+      'Sites where diesel pumping costs are high',
+    ],
+    benefits: [
+      'No fuel purchase or engine servicing for daily pumping',
+      'Pumps during daylight, with a tank providing supply after sunset',
+      'Lower maintenance than a generator-driven pump in many cases',
+      'Can be combined with drip irrigation scheduling',
+    ],
+    limitations: [
+      'Output drops on cloudy days; system sizing must account for seasonal variation',
+      'Borehole yield and water quality must be tested before pump selection',
+      'Requires a tank or reservoir for night-time demand',
+      'Dry-run protection is essential for unattended sites',
+    ],
+    components: [
+      'Solar pump and variable-frequency drive',
+      'Ground-mounted PV array with tilt designed for the site',
+      'Level controls, dry-run protection and isolators',
+      'Storage tank and distribution pipework (scope dependent)',
+    ],
+    designNotes: [
+      'We ask for borehole depth, static and dynamic water levels, required flow and daily volume.',
+      'Pump curves are compared against the calculated total head, not selected by wattage alone.',
+      'A site visit confirms array space, shading, security and cable routes.',
+    ],
+    relatedProducts: ['solar-water-pump-kit-2-2kw', 'jinko-tiger-neo-580w', 'epever-tracer-4210an'],
+  },
+  {
+    slug: 'solar-street-lighting',
+    title: 'Solar street lighting',
+    navLabel: 'Solar street lighting',
+    tagline: 'Off-grid lighting for roads, estates and facilities.',
+    summary:
+      'Standalone solar lights avoid trenching for power. Good designs account for night-time operation, rainy-season autonomy and theft-resistant mounting.',
+    image: '/images/solar-roof-2.jpg',
+    imageAlt: 'Solar modules installed outdoors as an illustrative lighting power source',
+    icon: 'i-lucide-lightbulb',
+    idealFor: [
+      'Estates, access roads and car parks',
+      'Schools, hospitals and public facilities',
+      'Construction sites and remote compounds',
+      'Local government and community projects',
+    ],
+    benefits: [
+      'No trenching or separate power supply for each pole',
+      'Operates independently of grid outages',
+      'Motion and dimming profiles can extend battery autonomy',
+      'Modular rollout by phase or street',
+    ],
+    limitations: [
+      'Rainy-season autonomy depends on battery and panel sizing, not just lamp wattage',
+      'Battery life is sensitive to heat; enclosure and placement matter',
+      'Trees, buildings and signage can cause shading',
+      'Theft and vandalism protection must be included in the specification',
+    ],
+    components: [
+      'Integrated or split solar street light',
+      'LiFePO₄ battery sized for autonomy',
+      'Pole, foundation and anti-theft fixings',
+      'Motion sensor and programmable controller',
+    ],
+    designNotes: [
+      'We calculate lighting lux, spacing and autonomy before selecting a fitting.',
+      'A mock-up pole can be installed for client approval on larger projects.',
+      'Warranty and spares availability are checked for the exact fitting specified.',
+    ],
+    relatedProducts: ['jinko-tiger-neo-580w', 'felicity-10kwh-lithium', 'dc-combiner-box-4-string'],
+  },
+  {
+    slug: 'off-grid',
+    title: 'Off-grid solar systems',
+    navLabel: 'Off-grid',
+    tagline: 'Independent power for sites beyond the grid.',
+    summary:
+      'Off-grid systems must supply every load, every day, including cloudy periods. Autonomy and load discipline matter more than in grid-connected designs.',
+    image: '/images/solar-farm-aerial.jpg',
+    imageAlt: 'Aerial view of a large solar array',
+    icon: 'i-lucide-sun',
+    idealFor: [
+      'Farms, lodges and remote facilities',
+      'Telecom or security sites',
+      'New builds awaiting a grid connection',
+      'Locations with no realistic grid supply',
+    ],
+    benefits: [
+      'No dependence on grid availability',
+      'Predictable operating cost after installation',
+      'Can be designed for critical-only or whole-site supply',
+      'Modular expansion as demand grows',
+    ],
+    limitations: [
+      'Usually the highest cost per kWh due to battery autonomy requirements',
+      'Oversizing for rare peak loads is expensive; load management is essential',
+      'Cloudy-season performance must be planned for',
+      'Requires disciplined maintenance and monitoring',
+    ],
+    components: [
+      'Off-grid inverter/charger or hybrid inverter',
+      'Battery bank sized for autonomy',
+      'Large enough PV array for worst-case months',
+      'Generator backup where justified',
+    ],
+    designNotes: [
+      'We model daily energy, seasonal sun hours and consecutive cloudy days.',
+      'Generator backup is recommended for critical sites, but should not be the default answer to undersized storage.',
+      'Monitoring is included so underperformance is visible early.',
+    ],
+    relatedProducts: ['growatt-spf-5000-es', 'pylontech-us5000', 'victron-smartsolar-150-70'],
+  },
+  {
+    slug: 'grid-tied',
+    title: 'Grid-tied solar systems',
+    navLabel: 'Grid-tied',
+    tagline: 'Use solar first when the grid is dependable.',
+    summary:
+      'Grid-tied solar reduces daytime consumption without battery cost. It does not provide backup, so it suits sites with stable supply and daytime demand.',
+    image: '/images/panels-closeup.jpg',
+    imageAlt: 'Close-up of solar modules in a ground-mounted array',
+    icon: 'i-lucide-transmission-line',
+    idealFor: [
+      'Offices and businesses with stable grid supply',
+      'Daytime-heavy operations such as cold storage',
+      'Sites with suitable roof or carport space',
+      'Customers not yet ready to invest in batteries',
+    ],
+    benefits: [
+      'Lower capital cost than a hybrid system of the same array size',
+      'Simple, efficient conversion with no battery losses',
+      'Quick payback where daytime tariffs are high',
+      'Battery storage can be added later with a different inverter',
+    ],
+    limitations: [
+      'No power during a grid outage',
+      'Requires stable grid voltage and frequency',
+      'Export and metering arrangements depend on the utility',
+      'Not suitable where outage protection is the main objective',
+    ],
+    components: [
+      'Grid-tied string inverter',
+      'Solar array and mounting',
+      'AC/DC isolation and protection',
+      'Generation meter and monitoring',
+    ],
+    designNotes: [
+      'We verify that the grid connection is suitable before recommending a grid-tied system.',
+      'Anti-islanding and protection settings must meet the utility’s requirements.',
+      'Where backup is required, we quote a hybrid or AC-coupled alternative instead.',
+    ],
+    relatedProducts: ['growatt-min-5000tl-x', 'solis-s5-gr3p5k', 'jinko-tiger-neo-580w'],
+  },
+  {
+    slug: 'energy-audits-upgrades',
+    title: 'Energy audits & system upgrades',
+    navLabel: 'Audits & upgrades',
+    tagline: 'Measure first. Then size, replace or expand.',
+    summary:
+      'An audit turns guesswork into a load schedule and a prioritised plan. It is also the right starting point for an existing system that underperforms.',
+    image: '/images/system-design.jpg',
+    imageAlt: 'Engineer drafting a technical system design',
+    icon: 'i-lucide-clipboard-check',
+    idealFor: [
+      'Homes or businesses planning a first system',
+      'Existing installations with recurring faults or poor output',
+      'Customers adding batteries, panels or a generator',
+      'Facilities comparing solar, generator and grid options',
+    ],
+    benefits: [
+      'A documented load schedule you can reuse for any installer',
+      'Clear separation of essential and optional loads',
+      'Identification of unsafe wiring or undersized protection',
+      'Prioritised recommendations matched to budget',
+    ],
+    limitations: [
+      'An audit is a paid professional service, not a free quotation',
+      'Measured data may require logging over several days',
+      'Findings may recommend electrical remedial work before solar',
+      'It does not guarantee a specific bill reduction',
+    ],
+    components: [
+      'Load inventory and measured demand logging',
+      'Distribution board and earthing inspection',
+      'Roof or plant-room assessment',
+      'Written report with phased recommendations',
+    ],
+    designNotes: [
+      'We record continuous and surge loads separately.',
+      'Existing inverter and battery settings are reviewed before recommending replacement.',
+      'Recommendations distinguish safety-critical work from optional improvements.',
+    ],
+    relatedProducts: ['wifi-monitoring-dongle', 'pylontech-us5000', 'dc-combiner-box-4-string'],
+  },
+]
+
+export function getSolutionBySlug(slug: string): Solution | undefined {
+  return solutions.find((solution) => solution.slug === slug)
+}
+
+export const primarySolutions = solutions.slice(0, 6)
